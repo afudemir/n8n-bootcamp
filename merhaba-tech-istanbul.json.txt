@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "19b6e134-cc89-4c45-89ee-216efcb374f9",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "682c4420-cdc9-494e-ae88-82811d25f747",
+              "name": "message",
+              "value": "Merhaba Tech Istanbul!",
+              "type": "string"
+            },
+            {
+              "id": "83193d5a-a402-4c4d-8a9c-17d50e9a28cc",
+              "name": "student",
+              "value": "ahmet furkan demir",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "b99b740e-2237-4594-bb51-45a6bda45976",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "40eace4f88cd325637792f83462d2b66105d22de44a6483b3f541ce6f1c5f9fb"
+  }
+}

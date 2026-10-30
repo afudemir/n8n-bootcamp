@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "34e170ac-4bf0-4025-a6a4-f6ea484d9031",
+      "name": "When chat message received",
+      "webhookId": "42f9f78e-9190-4949-9b6c-7ca16bcab7f2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f7756ffd-964d-4990-ae26-4c40210393bb",
+              "name": "output",
+              "value": "Merhaba! Ben bir test botuyum.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        448,
+        0
+      ],
+      "id": "00bc05b8-a77b-447e-8af5-c2ee58bc60c5",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "40eace4f88cd325637792f83462d2b66105d22de44a6483b3f541ce6f1c5f9fb"
+  }
+}
